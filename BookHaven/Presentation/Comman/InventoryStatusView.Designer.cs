@@ -129,6 +129,7 @@
             Controls.Add(dataGridView1);
             Controls.Add(btnGenarate);
             Name = "InventoryStatusView";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "InventoryStatusView";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel1.ResumeLayout(false);

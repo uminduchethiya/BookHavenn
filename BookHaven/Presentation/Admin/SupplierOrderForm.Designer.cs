@@ -221,6 +221,7 @@
             Controls.Add(panel1);
             ForeColor = Color.Black;
             Name = "SupplierOrderForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "SupplierOrderForm";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

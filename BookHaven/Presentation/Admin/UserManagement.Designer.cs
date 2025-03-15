@@ -296,6 +296,7 @@
             Controls.Add(datagridviewuser);
             Controls.Add(panel1);
             Name = "UserManagement";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "UserManagement";
             Load += UserManagement_Load;
             panel1.ResumeLayout(false);

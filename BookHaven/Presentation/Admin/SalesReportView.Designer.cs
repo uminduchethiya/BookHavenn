@@ -182,6 +182,7 @@
             Controls.Add(dtpEndDate);
             Controls.Add(dtpStartDate);
             Name = "SalesReportView";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "SalesReportView";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel1.ResumeLayout(false);

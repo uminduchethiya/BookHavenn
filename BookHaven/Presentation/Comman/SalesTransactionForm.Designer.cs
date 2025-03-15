@@ -30,6 +30,7 @@
         {
             label1 = new Label();
             panel1 = new Panel();
+            pictureBox1 = new PictureBox();
             label2 = new Label();
             label3 = new Label();
             dataGridView1 = new DataGridView();
@@ -60,11 +61,10 @@
             lblEmail = new Label();
             lblPhone = new Label();
             panel2 = new Panel();
-            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -85,6 +85,17 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1009, 69);
             panel1.TabIndex = 4;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.left_arrow_10117838;
+            pictureBox1.Location = new Point(12, 17);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(46, 29);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // label2
             // 
@@ -112,7 +123,7 @@
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { BookId, Title, Price, Quantity, Subtotal });
             dataGridView1.Location = new Point(43, 180);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(571, 449);
+            dataGridView1.Size = new Size(543, 449);
             dataGridView1.TabIndex = 7;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             dataGridView1.CellValueChanged += dataGridView1_CellValueChanged;
@@ -144,13 +155,14 @@
             // 
             // btnAddCustomer
             // 
-            //btnAddCustomer.BackgroundImage = Properties.Resources._4288270;
+            btnAddCustomer.BackColor = SystemColors.ActiveCaption;
             btnAddCustomer.BackgroundImageLayout = ImageLayout.Zoom;
-            btnAddCustomer.Location = new Point(880, 77);
+            btnAddCustomer.Location = new Point(832, 77);
             btnAddCustomer.Name = "btnAddCustomer";
-            btnAddCustomer.Size = new Size(76, 46);
+            btnAddCustomer.Size = new Size(124, 46);
             btnAddCustomer.TabIndex = 8;
-            btnAddCustomer.UseVisualStyleBackColor = true;
+            btnAddCustomer.Text = "Add New Customer";
+            btnAddCustomer.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
@@ -166,7 +178,7 @@
             // 
             lblTotalAmount.AutoSize = true;
             lblTotalAmount.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTotalAmount.ForeColor = Color.Blue;
+            lblTotalAmount.ForeColor = SystemColors.ActiveCaptionText;
             lblTotalAmount.Location = new Point(832, 421);
             lblTotalAmount.Name = "lblTotalAmount";
             lblTotalAmount.Size = new Size(114, 21);
@@ -206,7 +218,7 @@
             // 
             lblDiscountedAmount.AutoSize = true;
             lblDiscountedAmount.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblDiscountedAmount.ForeColor = Color.IndianRed;
+            lblDiscountedAmount.ForeColor = Color.Black;
             lblDiscountedAmount.Location = new Point(832, 498);
             lblDiscountedAmount.Name = "lblDiscountedAmount";
             lblDiscountedAmount.Size = new Size(117, 17);
@@ -282,7 +294,7 @@
             // 
             lblFinalAamount.AutoSize = true;
             lblFinalAamount.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblFinalAamount.ForeColor = Color.Red;
+            lblFinalAamount.ForeColor = SystemColors.ActiveCaptionText;
             lblFinalAamount.Location = new Point(857, 542);
             lblFinalAamount.Name = "lblFinalAamount";
             lblFinalAamount.Size = new Size(92, 17);
@@ -366,17 +378,6 @@
             panel2.Size = new Size(309, 160);
             panel2.TabIndex = 30;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.left_arrow_10117838;
-            pictureBox1.Location = new Point(12, 17);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(46, 29);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 6;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
-            // 
             // SalesTransactionForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -408,10 +409,10 @@
             Load += SalesTransactionForm_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
