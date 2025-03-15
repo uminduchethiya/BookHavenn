@@ -42,7 +42,6 @@
             txtpassword = new TextBox();
             label5 = new Label();
             btnlogin = new Button();
-            label6 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -159,7 +158,7 @@
             btnlogin.BackColor = SystemColors.MenuHighlight;
             btnlogin.Font = new Font("Arial", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnlogin.ForeColor = SystemColors.ButtonFace;
-            btnlogin.Location = new Point(222, 474);
+            btnlogin.Location = new Point(222, 454);
             btnlogin.Name = "btnlogin";
             btnlogin.Size = new Size(363, 36);
             btnlogin.TabIndex = 9;
@@ -167,24 +166,12 @@
             btnlogin.UseVisualStyleBackColor = false;
             btnlogin.Click += btnlogin_Click;
             // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Arial", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = SystemColors.MenuHighlight;
-            label6.Location = new Point(336, 439);
-            label6.Name = "label6";
-            label6.Size = new Size(125, 16);
-            label6.TabIndex = 10;
-            label6.Text = "Forgot Password ?";
-            // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(784, 561);
-            Controls.Add(label6);
             Controls.Add(btnlogin);
             Controls.Add(txtpassword);
             Controls.Add(label5);
@@ -195,6 +182,7 @@
             Controls.Add(label2);
             Controls.Add(panel1);
             Name = "LoginForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "LoginForm";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -218,6 +206,5 @@
         private TextBox txtpassword;
         private Label label5;
         private Button btnlogin;
-        private Label label6;
     }
 }

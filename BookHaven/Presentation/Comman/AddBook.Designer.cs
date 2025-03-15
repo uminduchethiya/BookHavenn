@@ -270,6 +270,7 @@
             Controls.Add(panel1);
             Controls.Add(panel2);
             Name = "AddBook";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "AddBook";
             Load += AddBook_Load;
             panel1.ResumeLayout(false);

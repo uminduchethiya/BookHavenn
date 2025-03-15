@@ -113,6 +113,7 @@
             Controls.Add(dataGridView1);
             Controls.Add(btnGenarate);
             Name = "MostBooksSaleView";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "MostBooksSaleView";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel1.ResumeLayout(false);

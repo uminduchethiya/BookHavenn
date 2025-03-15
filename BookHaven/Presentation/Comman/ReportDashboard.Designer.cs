@@ -117,6 +117,7 @@
             Controls.Add(btnBestBooksSelling);
             Controls.Add(btnSalesReport);
             Name = "ReportDashboard";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "ReportDashboard";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

@@ -112,6 +112,7 @@
             Controls.Add(btnExport);
             Controls.Add(dgvDailySales);
             Name = "SalesReportDaily";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "SalesReportDaily";
             Load += SalesReportDaily_Load;
             ((System.ComponentModel.ISupportInitialize)dgvDailySales).EndInit();
